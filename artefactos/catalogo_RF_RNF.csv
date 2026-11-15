@@ -11,6 +11,7 @@ RF-09,Alertar a Administración si se factura sin conformidad o hito facturable,
 RF-10,RRHH gestiona el legajo del personal con registro de consentimiento,Must,Solo RRHH ve DNI y domicilio; el consentimiento queda con fecha,Entrevista 2
 RF-11,Generar reporte de trazabilidad contrato-entregable-equipo-responsable,Should,Reporte generado en ≤ 10 s para un contrato,Entrevista 1
 RF-12,Registrar la auditoría de accesos a datos personales,Must,"Cada consulta deja usuario, fecha y motivo",Entrevista 2; Ley 29733
+RF-13,"El sistema permitirá a la entidad cliente consultar, con un enlace seguro de solo lectura, el estado de los entregables de su contrato, sin datos personales",Should,El enlace muestra solo el estado y las fechas de los entregables del contrato; no muestra datos personales; un enlace vencido o alterado es rechazado,CR-01 (Reunión 3)
 RNF-01,"Protección de datos personales (Ley 29733): acceso por rol, consentimiento, cifrado y registro de accesos",Must,100% de accesos con registro; datos cifrados en reposo y en tránsito; revisión legal documentada,Entrevista 2; Ley 29733
 RNF-02,Disponibilidad y rendimiento: conexión limitada y modo sin conexión,Must,Disponibilidad ≥ 99.0% mensual; respuesta ≤ 3 s con 2 Mbps; modo offline hasta 72 h,Entrevista 1; Encuesta
 RNF-03,"Usabilidad: registro de avance en ≤ 3 pantallas, español simple, botones con ícono",Must,Tarea en ≤ 3 pantallas y ≤ 2 min por ≥ 80% de usuarios de prueba,Encuesta

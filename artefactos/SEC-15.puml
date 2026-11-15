@@ -1,0 +1,14 @@
+@startuml SEC-15
+title SEC-15 Consultar estado de entregables (CU-15)
+actor "Entidad cliente" as E
+participant ":AccesoCliente" as A <<entity>>
+participant ":Entregable" as G <<entity>>
+E -> A : validarEnlace(enlace)
+alt enlace vencido o alterado
+ A --> E : rechazar acceso
+else enlace vigente
+ A -> G : consultarEstado(idContrato)
+ G --> A : estados y fechas (sin datos personales)
+ A --> E : mostrarEstado()
+end
+@enduml

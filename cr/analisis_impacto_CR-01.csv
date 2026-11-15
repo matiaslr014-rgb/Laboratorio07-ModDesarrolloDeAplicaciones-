@@ -1,0 +1,6 @@
+﻿Dimensión,Impacto,Dato cuantificado,Mitigación propuesta,Riesgo asociado
+Alcance,Incorpora un actor externo (Entidad cliente) que estaba fuera del alcance; nueva clase AccesoCliente,"+1 RF, +1 CU, +1 HU, +1 clase",Mantenerlo como Should y reevaluar tras C2; registrar al actor como usuario de solo lectura,R-6 sube de 12 a 16
+Tiempo,"Desarrollo, pruebas y seguridad adicionales","+100 h (80 h de desarrollo y 20 h de pruebas), unas 2 semanas en una iteración de construcción","Planificarlo en C3; si se incorpora, C3 pasa de 4 a 6 semanas y T1 se desplaza 2 semanas",Retraso de la transición
+Costo,"80 h x S/ 55 + 20 h x S/ 45 + revisión de seguridad S/ 1,500","+S/ 6,800; total de S/ 65,890 a S/ 72,690, margen de S/ 7,310 frente al tope de S/ 80,000",Recalibrar horas por punto en C1; el margen equivale a 10.1% del costo total,Superar el tope si el desvío supera 10%
+Calidad,Nuevo punto de acceso externo que exige RNF-01 y RNF-04 más estrictos,"+2 criterios de prueba (CP-13.1, CP-13.2)","Enlace de solo lectura con vencimiento; AccesoCliente consulta por dependencia, sin asociación directa con Entregable",Exposición de datos si el enlace se filtra
+Riesgos,Exposición de datos si el enlace se filtra; ampliación de alcance (R-6),R-6 de 12 a 16; nuevo riesgo de seguridad externa,Prueba de seguridad CP-13.2 y revisión de seguridad antes de publicar,Seguridad externa

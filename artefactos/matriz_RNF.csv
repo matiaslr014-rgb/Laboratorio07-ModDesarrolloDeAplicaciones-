@@ -1,7 +1,7 @@
 ﻿RNF,CU,Clases,Prueba,Criterio de prueba,Versión
-RNF-01,CU-10; CU-13,DatosPersonales; RegistroAcceso; Usuario,CP-10; CP-12,Prueba indirecta; revisión legal documentada,v1.0
-RNF-02,CU-05; CU-06,RegistroPendiente; ControlAvance,—,Sin prueba propia,v1.0
-RNF-03,CU-05,PantallaAvance; PantallaLegajo,—,Sin prueba propia,v1.0
-RNF-04,CU-12,Usuario,—,Sin prueba propia,v1.0
-RNF-05,—,—,—,Transversal: control de costo por iteración,v1.0
-RNF-06,—,—,—,Transversal: plan de despliegue T1,v1.0
+RNF-01,CU-10; CU-13,DatosPersonales; RegistroAcceso; Usuario,CP-RNF01,100% de accesos con registro; datos cifrados en reposo y en tránsito,v1.1
+RNF-02,CU-05; CU-06,RegistroPendiente; ControlAvance,CP-RNF02,Disponibilidad mensual de 99.0% o más; respuesta de 3 s o menos con 2 Mbps; modo sin conexión de 72 h,v1.1
+RNF-03,CU-05,PantallaAvance; PantallaLegajo,CP-RNF03,Tarea en 3 pantallas o menos y 2 min o menos por 80% o más de usuarios de prueba,v1.1
+RNF-04,CU-12,Usuario,CP-RNF04,Contraseña de 10 caracteres o más; bloqueo tras 5 intentos; enlaces de consulta de solo lectura y con vencimiento,v1.1
+RNF-05,—,—,—,Transversal: control de costo por iteración,v1.1
+RNF-06,—,—,CP-RNF06,Respaldo diario; pérdida máxima de 24 h; recuperación en 4 h o menos,v1.1

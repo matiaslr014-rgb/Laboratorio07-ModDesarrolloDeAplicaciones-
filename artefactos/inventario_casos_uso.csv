@@ -13,3 +13,4 @@ CU-11,Generar reporte de trazabilidad,"Gerente General, Administración",RF-11,
 CU-12,Autenticar usuario,Todos los usuarios,RNF-04,incluido por CU-05 y CU-10
 CU-13,Registrar auditoría de acceso a datos personales,Sistema,RF-12; RNF-01,incluido por CU-10
 CU-14,Devolver avance con observación,Jefe de Proyectos,RF-07,extend hacia CU-07
+CU-15,Consultar estado de entregables,Entidad cliente (solo lectura),RF-13,—

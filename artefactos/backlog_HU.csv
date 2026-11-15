@@ -11,3 +11,4 @@ HU-09,"Como administrador, quiero un aviso si un entregable no tiene conformidad
 HU-10,"Como responsable de RRHH, quiero guardar los datos de los trabajadores con su consentimiento para cumplir la ley",RF-10,CU-10,8,Must,4,5,5,14,1.75,10,8,
 HU-11,"Como gerente, quiero ver qué se contrató, qué se entregó y quién lo hizo para decidir con datos",RF-11,CU-11,5,Should,3,2,2,7,1.4,12,12,"HU-01, HU-02, HU-03, HU-04"
 HU-12,"Como responsable de RRHH, quiero ver quién consultó los datos de un trabajador para demostrar el control de acceso",RF-12,CU-13,3,Must,4,5,5,14,4.67,1,9,HU-10
+HU-13,"Como entidad cliente, quiero consultar con un enlace seguro el estado de los entregables de mi contrato para dar seguimiento sin pedir informes",RF-13,CU-15,por estimar (≈100 h),Should,,,,,,,,HU-08

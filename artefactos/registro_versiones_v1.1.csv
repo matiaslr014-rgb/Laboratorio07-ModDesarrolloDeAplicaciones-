@@ -1,0 +1,9 @@
+Artefacto,Versión base,Versión tras CR-01,Cambio
+Diagrama de clases de análisis,v1.0,v1.1,Agrega AccesoCliente y consultarEstado() en Entregable
+Catálogo RF/RNF,v1.1,v1.2,Agrega RF-13 y refuerza RNF-01 y RNF-04
+Backlog de HU,v1.1,v1.2,Agrega HU-13 con Gherkin y prioridad Should
+Modelo de casos de uso,v1.0,v1.1,Agrega CU-15 y el actor Entidad cliente
+Secuencias,v1.0,v1.1,Agrega SEC-15
+Matriz de trazabilidad,v1.0,v1.1,Agrega la fila de RF-13 y las pruebas de RNF
+Documento de Visión,v1.0,v1.1,Incluye a la entidad cliente como usuario de solo lectura
+Registro de riesgos y matriz de impacto,v1.0,v1.1,Actualiza R-6 y agrega el riesgo de seguridad externa
