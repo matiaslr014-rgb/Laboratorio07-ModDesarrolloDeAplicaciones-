@@ -1,0 +1,19 @@
+﻿Clase,Estereotipo,Atributos (privados),Operaciones (públicas),Paquete
+Contrato,entity,idContrato; entidadCliente; monto; fechaInicio; estado,registrar(); agregarEntregable(); cerrar(); reporteTrazabilidad(),Contratos y Servicios
+Entregable,entity,idEntregable; descripcion; fechaCompromiso; estado,asignarTecnico(); cambiarEstado(); asociarActivo(),Contratos y Servicios
+Activo (abstracta),entity,idActivo; serie; estado,asignarAEntregable(); liberar(),Activos
+Equipo,entity,ubicacion,actualizarUbicacion(),Activos
+Licencia,entity,fechaVencimiento; cantidad,verificarVigencia(),Activos
+Proveedor,entity,idProveedor; razonSocial; ruc,registrar(),Activos
+OrdenCompra,entity,idOrden; fecha; monto,generar(),Activos
+Trabajador,entity,idTrabajador; cargo; area,asignarse(),Personal
+DatosPersonales,entity,dni; domicilio; telefono; consentimiento; fechaConsentimiento,registrarConsentimiento(); actualizar(),Personal
+Usuario,entity,idUsuario; rol; intentosFallidos,autenticar(); bloquear(),Seguridad y Auditoría
+RegistroAvance,entity,idRegistro; fecha; estadoAvance; descripcion; foto,guardar(); validar(); devolver(observacion),Contratos y Servicios
+RegistroPendiente,entity,idPendiente; estadoSync,encolar(); sincronizar(),Sincronización
+ConformidadCliente,entity,fecha; documento; resultado; responsable,registrar(); esConforme(),Contratos y Servicios
+RegistroAcceso,entity,fecha; motivo,registrar(); consultarHistorial(),Seguridad y Auditoría
+PantallaAvance,boundary,,mostrar(); enviar(); confirmar(estado),Interfaz y Control
+ControlAvance,control,,registrarAvance(); verificarConexion(),Interfaz y Control
+PantallaLegajo,boundary,,mostrar(); guardar(); confirmar(),Interfaz y Control
+ControlLegajo,control,,abrirFicha(); guardarDatos(),Interfaz y Control

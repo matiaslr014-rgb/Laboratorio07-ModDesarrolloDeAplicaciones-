@@ -1,0 +1,15 @@
+﻿ID,Caso de uso,Actor principal,RF/RNF,Relación UML
+CU-01,Gestionar contrato y entregables,Jefe de Proyectos,RF-01,
+CU-02,Asignar técnicos a entregables,Jefe de Proyectos,RF-02,
+CU-03,Gestionar inventario de equipos y licencias,Logística,RF-03,
+CU-04,Asignar equipos a un entregable,Logística,RF-04,include CU-03
+CU-05,Registrar avance de servicio,Técnico,RF-05,include CU-12; extendido por CU-06
+CU-06,Sincronizar registros pendientes,Técnico (sistema),RF-06,extend hacia CU-05
+CU-07,Validar avance,Jefe de Proyectos,RF-07,extendido por CU-14
+CU-08,Registrar conformidad del cliente,Jefe de Proyectos (Entidad cliente secundario),RF-08,
+CU-09,Controlar facturación de un entregable,Administración,RF-09,dependencia hacia CU-08 (sin include)
+CU-10,Gestionar legajo del personal,RRHH,RF-10,include CU-12 y CU-13
+CU-11,Generar reporte de trazabilidad,"Gerente General, Administración",RF-11,
+CU-12,Autenticar usuario,Todos los usuarios,RNF-04,incluido por CU-05 y CU-10
+CU-13,Registrar auditoría de acceso a datos personales,Sistema,RF-12; RNF-01,incluido por CU-10
+CU-14,Devolver avance con observación,Jefe de Proyectos,RF-07,extend hacia CU-07

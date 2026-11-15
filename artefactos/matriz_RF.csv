@@ -1,0 +1,13 @@
+﻿RF,CU,HU,Clases,Secuencia,Prueba,Criterio de prueba,Versión
+RF-01,CU-01,HU-01,Contrato; Entregable,SEC-01,CP-01,Al guardar un contrato se listan sus entregables,v1.0
+RF-02,CU-02,HU-02,Entregable; Trabajador,SEC-02,CP-02,No se marca asignado sin técnico,v1.0
+RF-03,CU-03,HU-03,Activo; Equipo; Licencia,SEC-03,CP-03,Serie duplicada es rechazada,v1.0
+RF-04,CU-04,HU-04,Activo; Entregable,SEC-04,CP-04,La asignación aparece en entregable e inventario,v1.0
+RF-05,CU-05,HU-05,PantallaAvance; ControlAvance; RegistroAvance; RegistroPendiente; Entregable,SEC-05,CP-05,Sin conexión el registro queda por sincronizar,v1.0
+RF-06,CU-06,HU-06,RegistroPendiente; RegistroAvance; ControlAvance,SEC-06,CP-06,100% sincronizado en 5 min o menos tras reconectar,v1.0
+RF-07,CU-07; CU-14,HU-07,RegistroAvance; Entregable,SEC-07,CP-07,Estado validado o devuelto con notificación,v1.0
+RF-08,CU-08,HU-08,ConformidadCliente; Entregable,SEC-08,CP-08,Sin documento no se guarda la conformidad,v1.0
+RF-09,CU-09,HU-09,Entregable; ConformidadCliente,SEC-09,CP-09,Sin conformidad se bloquea el pase a facturación,v1.0
+RF-10,CU-10,HU-10,PantallaLegajo; ControlLegajo; Trabajador; DatosPersonales,SEC-10,CP-10,Sin consentimiento no se guardan datos sensibles,v1.0
+RF-11,CU-11,HU-11,Contrato; Entregable; Activo; Trabajador,SEC-11,CP-11,Reporte en 10 s o menos por contrato,v1.0
+RF-12,CU-13,HU-12,RegistroAcceso; DatosPersonales; Usuario,SEC-12/13,CP-12,"Cada consulta deja usuario, fecha y motivo",v1.0

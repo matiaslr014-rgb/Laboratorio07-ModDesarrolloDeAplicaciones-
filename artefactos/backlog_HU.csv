@@ -1,0 +1,13 @@
+﻿HU,Historia,RF,CU,Puntos,MoSCoW,Valor,Tiempo,Riesgo,Costo retraso,WSJF,Rank WSJF,Orden final,Depende de
+HU-01,"Como jefe de proyectos, quiero registrar un contrato con sus entregables para saber qué debo cumplir",RF-01,CU-01,5,Must,5,5,3,13,2.6,6,3,
+HU-02,"Como jefe de proyectos, quiero asignar técnicos a un entregable para que cada trabajo tenga un responsable",RF-02,CU-02,3,Must,5,4,3,12,4.0,2,4,HU-01
+HU-03,"Como encargado de almacén, quiero registrar equipos con su número de serie para no confundirlos",RF-03,CU-03,3,Must,4,4,3,11,3.67,3,1,
+HU-04,"Como encargado de almacén, quiero asignar un equipo a un entregable para saber dónde está",RF-04,CU-04,3,Must,4,3,3,10,3.33,4,2,HU-03
+HU-05,"Como técnico, quiero registrar mi avance con una foto en pocos pasos para no perder tiempo en campo",RF-05,CU-05,8,Must,5,5,4,14,1.75,9,5,
+HU-06,"Como técnico, quiero que mis registros se envíen solos cuando vuelva la señal para no repetir el trabajo",RF-06,CU-06,8,Must,5,4,4,13,1.62,11,10,HU-05
+HU-07,"Como jefe de proyectos, quiero validar o devolver un avance con una observación para asegurar la calidad",RF-07,CU-07; CU-14,5,Must,4,3,3,10,2.0,8,6,HU-05
+HU-08,"Como jefe de proyectos, quiero registrar la conformidad del cliente para poder cobrar",RF-08,CU-08,5,Must,5,4,4,13,2.6,7,7,HU-07
+HU-09,"Como administrador, quiero un aviso si un entregable no tiene conformidad para no facturar mal",RF-09,CU-09,3,Should,3,2,4,9,3.0,5,11,HU-08
+HU-10,"Como responsable de RRHH, quiero guardar los datos de los trabajadores con su consentimiento para cumplir la ley",RF-10,CU-10,8,Must,4,5,5,14,1.75,10,8,
+HU-11,"Como gerente, quiero ver qué se contrató, qué se entregó y quién lo hizo para decidir con datos",RF-11,CU-11,5,Should,3,2,2,7,1.4,12,12,"HU-01, HU-02, HU-03, HU-04"
+HU-12,"Como responsable de RRHH, quiero ver quién consultó los datos de un trabajador para demostrar el control de acceso",RF-12,CU-13,3,Must,4,5,5,14,4.67,1,9,HU-10

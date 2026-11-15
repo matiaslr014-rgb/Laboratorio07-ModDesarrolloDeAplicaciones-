@@ -1,0 +1,6 @@
+﻿Artefacto,Historial,Línea base,Tras CR-01
+Diagrama de clases de análisis,"v0.1 (PoC, 8 clases) → v0.2 (D-1 a D-4, 14 clases) → v1.0 (revisión OMG UML 2.5.1)",v1.0,v1.1
+Catálogo RF/RNF,"v1.0 → v1.1 (RNF crítico de datos, D-1/D-2)",v1.1,v1.2
+Backlog de HU,"v1.0 → v1.1 (criterio de alerta en HU-09, validación del 06/10)",v1.1,v1.2
+"Alcance (Paso 1, 1.2)",v1.0 → v1.1 (decisión D-3),v1.1,—
+"Documento de Visión, Modelo CUS, Secuencias, Matriz de trazabilidad, Registro de riesgos",v1.0,v1.0,v1.1

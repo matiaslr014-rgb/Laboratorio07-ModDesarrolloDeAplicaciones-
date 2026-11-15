@@ -1,0 +1,7 @@
+﻿RNF,CU,Clases,Prueba,Criterio de prueba,Versión
+RNF-01,CU-10; CU-13,DatosPersonales; RegistroAcceso; Usuario,CP-10; CP-12,Prueba indirecta; revisión legal documentada,v1.0
+RNF-02,CU-05; CU-06,RegistroPendiente; ControlAvance,—,Sin prueba propia,v1.0
+RNF-03,CU-05,PantallaAvance; PantallaLegajo,—,Sin prueba propia,v1.0
+RNF-04,CU-12,Usuario,—,Sin prueba propia,v1.0
+RNF-05,—,—,—,Transversal: control de costo por iteración,v1.0
+RNF-06,—,—,—,Transversal: plan de despliegue T1,v1.0
