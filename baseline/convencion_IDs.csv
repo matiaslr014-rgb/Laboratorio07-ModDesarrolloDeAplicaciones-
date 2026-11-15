@@ -1,0 +1,11 @@
+﻿Tipo de artefacto,Formato de ID,Ejemplo,Validación (expresión regular)
+Requisito funcional,RF-nn,RF-05,^RF-\d{2}$
+Requisito no funcional,RNF-nn,RNF-02,^RNF-\d{2}$
+Caso de uso del sistema,CU-nn,CU-05,^CU-\d{2}$
+Historia de usuario,HU-nn,HU-05,^HU-\d{2}$
+Clase de análisis,Nombre en PascalCase,RegistroAvance,^[A-Z][A-Za-z]+$
+Diagrama de secuencia,SEC-nn (nn = CU),SEC-05,^SEC-\d{2}(/\d{2})?$
+Criterio de prueba de RF,CP-nn (nn = RF); varios: CP-nn.k,CP-05; CP-13.1,^CP-\d{2}(\.\d)?$
+Criterio de prueba de RNF (extensión),CP-RNFnn (nn = RNF),CP-RNF02,^CP-RNF\d{2}$
+Solicitud de cambio,CR-nn,CR-01,^CR-\d{2}$
+Versión,vMayor.menor,v1.0,^v\d+\.\d+$
