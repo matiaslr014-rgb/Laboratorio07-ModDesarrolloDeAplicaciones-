@@ -1,6 +1,6 @@
 ﻿Clase,Estereotipo,Atributos (privados),Operaciones (públicas),Paquete
 Contrato,entity,idContrato; entidadCliente; monto; fechaInicio; estado,registrar(); agregarEntregable(); cerrar(); reporteTrazabilidad(),Contratos y Servicios
-Entregable,entity,idEntregable; descripcion; fechaCompromiso; estado,asignarTecnico(); cambiarEstado(); asociarActivo(),Contratos y Servicios
+Entregable,entity,idEntregable; descripcion; fechaCompromiso; estado,asignarTecnico(); cambiarEstado(); asociarActivo(); consultarEstado(),Contratos y Servicios
 Activo (abstracta),entity,idActivo; serie; estado,asignarAEntregable(); liberar(),Activos
 Equipo,entity,ubicacion,actualizarUbicacion(),Activos
 Licencia,entity,fechaVencimiento; cantidad,verificarVigencia(),Activos
@@ -17,3 +17,4 @@ PantallaAvance,boundary,,mostrar(); enviar(); confirmar(estado),Interfaz y Contr
 ControlAvance,control,,registrarAvance(); verificarConexion(),Interfaz y Control
 PantallaLegajo,boundary,,mostrar(); guardar(); confirmar(),Interfaz y Control
 ControlLegajo,control,,abrirFicha(); guardarDatos(),Interfaz y Control
+AccesoCliente,entity,idAcceso; enlace; fechaVencimiento; idContrato,validarEnlace(); mostrarEstado(),Contratos y Servicios
