@@ -1,0 +1,47 @@
+# SRS breve v1.1 – SistemApp Symmetry (ISO/IEC/IEEE 29148)
+
+Versión: v1.1 (línea base v1.0 más el cambio CR-01). Generado a partir de `artefactos/catalogo_RF_RNF.csv`.
+
+## 1. Propósito
+Especificar los requisitos de SistemApp Symmetry, sistema de gestión de contratos, entregables, equipos, avances, conformidades y legajos de Symmetry Corporation S.A.C.
+
+## 2. Alcance
+**Incluye:** contratos y entregables, asignación de técnicos, inventario de equipos y licencias, registro de avances con modo sin conexión, validación de avances, conformidad del cliente, alerta de facturación, legajo con consentimiento y auditoría, reporte de trazabilidad y, con el CR-01 (diferido a C3), la consulta de solo lectura de la entidad cliente.
+**Excluye:** licitaciones (D-3), contabilidad, planilla electrónica y el software entregado a clientes.
+
+## 3. Requisitos funcionales (13)
+
+| ID | Descripción | MoSCoW | Criterio de aceptación | Origen |
+|---|---|---|---|---|
+| RF-01 | Registrar contratos con sus entregables, fechas y monto | Must | Al guardar un contrato nuevo se genera un ID y se listan sus entregables | Entrevista 1; diagnóstico inicial |
+| RF-02 | Asignar técnicos a entregables | Must | Un entregable no se guarda como «asignado» sin al menos un técnico | Entrevista 1 |
+| RF-03 | Registrar equipos y licencias con número de serie único | Must | Un número de serie repetido es rechazado con mensaje | Entrevista 1; diagnóstico inicial |
+| RF-04 | Asignar equipos y licencias a un entregable | Must | La asignación es visible en el entregable y en el inventario | Entrevista 1 |
+| RF-05 | El técnico registra avance con descripción y foto, aun sin conexión | Must | El registro queda local con estado «por sincronizar» | Encuesta |
+| RF-06 | Sincronizar automáticamente los registros pendientes al recuperar conexión | Must | 100% de los pendientes en el servidor en ≤ 5 min tras reconectar | Encuesta; diagnóstico inicial |
+| RF-07 | El Jefe de Proyectos valida o devuelve un avance con observación | Must | Estado «validado» o «devuelto» y notificación al técnico | Entrevista 1 |
+| RF-08 | Registrar la conformidad u observación de la entidad cliente | Must | El entregable pasa a «conforme» u «observado» con fecha y responsable | Entrevista 2 |
+| RF-09 | Alertar a Administración si se factura sin conformidad o hito facturable | Should | Se muestra alerta y se bloquea el pase a facturación | Entrevista 2 |
+| RF-10 | RRHH gestiona el legajo del personal con registro de consentimiento | Must | Solo RRHH ve DNI y domicilio; el consentimiento queda con fecha | Entrevista 2 |
+| RF-11 | Generar reporte de trazabilidad contrato-entregable-equipo-responsable | Should | Reporte generado en ≤ 10 s para un contrato | Entrevista 1 |
+| RF-12 | Registrar la auditoría de accesos a datos personales | Must | Cada consulta deja usuario, fecha y motivo | Entrevista 2; Ley 29733 |
+| RF-13 | El sistema permitirá a la entidad cliente consultar, con un enlace seguro de solo lectura, el estado de los entregables de su contrato, sin datos personales | Should | El enlace muestra solo el estado y las fechas de los entregables del contrato; no muestra datos personales; un enlace vencido o alterado es rechazado | CR-01 (Reunión 3) |
+
+## 4. Requisitos no funcionales (6)
+
+| ID | Descripción | MoSCoW | Criterio de aceptación | Origen |
+|---|---|---|---|---|
+| RNF-01 | Protección de datos personales (Ley 29733): acceso por rol, consentimiento, cifrado y registro de accesos | Must | 100% de accesos con registro; datos cifrados en reposo y en tránsito; revisión legal documentada | Entrevista 2; Ley 29733 |
+| RNF-02 | Disponibilidad y rendimiento: conexión limitada y modo sin conexión | Must | Disponibilidad ≥ 99.0% mensual; respuesta ≤ 3 s con 2 Mbps; modo offline hasta 72 h | Entrevista 1; Encuesta |
+| RNF-03 | Usabilidad: registro de avance en ≤ 3 pantallas, español simple, botones con ícono | Must | Tarea en ≤ 3 pantallas y ≤ 2 min por ≥ 80% de usuarios de prueba | Encuesta |
+| RNF-04 | Seguridad: autenticación con roles y bloqueo ante intentos fallidos | Must | Contraseña ≥ 10 caracteres; bloqueo tras 5 intentos fallidos | Entrevista 2; Ley 29733 |
+| RNF-05 | Costo: respetar el presupuesto declarado | Must | Implementación ≤ S/ 80,000; mantenimiento ≤ S/ 12,000 por año | Diagnóstico inicial |
+| RNF-06 | Respaldo y recuperación | Should | Respaldo diario; pérdida máxima ≤ 24 h; recuperación ≤ 4 h | Buena práctica |
+
+RNF-04 se refuerza con el CR-01: los enlaces de consulta son de solo lectura y con vencimiento.
+
+## 5. Restricciones
+Ley N.° 29733 y reglamento; presupuesto de S/ 80,000 (S/ 72,690 con CR-01); conectividad limitada; reducción de papel de al menos 60%.
+
+## 6. Trazabilidad y versión
+Matrices en `artefactos/matriz_RF.csv` y `artefactos/matriz_RNF.csv`; reportes en `reportes/`. Versión v1.1.

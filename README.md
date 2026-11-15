@@ -4,7 +4,7 @@ Curso: Modelado y Desarrollo de Aplicaciones (CIIN1322P) · UPN · Ciclo 2026-II
 
 ## Contenido
 - `baseline/` – línea base v1.0: convención de IDs y registro de versiones de los artefactos
-- `artefactos/` – catálogo RF/RNF, casos de uso, backlog, clases y matrices Req–CU–Clase–Prueba
+- `artefactos/` – SRS breve v1.1, catálogo RF/RNF, casos de uso, backlog, clases y matrices Req–CU–Clase–Prueba
 - `cr/` – solicitud de cambio CR-01 y análisis de impacto
 - `tools/reporte_trazabilidad.py` – script que valida los IDs y calcula la cobertura
 - `reportes/` – reportes de cobertura de la línea base (v1.0) y de la versión actualizada (v1.1)
